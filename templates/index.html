@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Encabezado de la pestaña-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Página de Pruebas Flask</title>
+</head>
+
+<!--Contenido de la página-->
+<body>
+    <!--Diseño de las viñetas (Cuadradas)-->
+    <style>
+        .cuadrados {
+            list-style: square;
+        }
+    </style>
+
+    <!--Título-->
+    <h1>Esta es una página web de pruebas y tests</h1>
+
+    <!--Cuerpo del título-->
+    <p>Siéntete libre de experimentar con las funcionalidades de la página:</p>
+
+    <!--Lista (Clase de viñeta: Cuadrados)-->
+    <ul class="cuadrados">
+        <li><br>Ir a <a href="/random_datos">Datos tecnológicos random.</a></li>
+        <li><br>Ir a un <a href="/gen_pass">Generador de contraseñas.</a></li>
+        <li><br>Ir a una <a href="/memes">Página de memes.</a></li>
+        <li><br>Ver <a href="/patos">Imagenes de pato.</a></li>
+        <li><br>Ver <a href="/perros">Imagenes de perros.</a></li>
+        <li><br>Ver <a href="/tiempo">Información del tiempo.</a></li>
+        <li><br>Ver <a href="/memeapi">Plantilla de memes.</a></li>
+    </ul>
+</body>
+</html>
